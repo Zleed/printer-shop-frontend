@@ -1,0 +1,13 @@
+.appBar {
+    height: 2em;
+}
+.toolBar {
+    background-color: #0B9C60;
+    position: fixed;
+}
+.button {
+    font-weight: bold;
+    font-size: 0.8em;
+    height: 3.5em;
+    width: 7em;
+}
