@@ -1,13 +1,21 @@
-.appBar {
-    height: 2em;
-}
-.toolBar {
-    background-color: #0B9C60;
-    position: fixed;
+.navBar {
+    background-image: url('../../resources/waveTop.svg');
 }
 .button {
-    font-weight: bold;
-    font-size: 0.8em;
+    padding: 5px;
     height: 3.5em;
-    width: 7em;
+}
+.ButtonGroup {
+    padding: 1em;
+}
+.MuiButton-label {
+    margin: 5px;
+    width: 100%;
+    color: #F1F2F3;
+    min-width: 100px;
+    font-size: 1.1em;
+    display: inherit;
+    font-weight: bolder;
+    align-items: inherit;
+    justify-content: inherit;
 }

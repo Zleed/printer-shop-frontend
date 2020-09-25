@@ -1,11 +1,13 @@
-import './NavBar.css';
+import './NavBar.css'
 import React from 'react';
-import { AppBar, Toolbar, ButtonGroup, Button } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
+import {ButtonGroup, Button} from "@material-ui/core";
+import {useHistory} from "react-router-dom";
+import Grid from "@material-ui/core/Grid";
+import logo from '../../resources/logo.png';
 
 function NavBar() {
 
-   const history = useHistory();
+    const history = useHistory();
 
     const HomeClickEvent = () => history.push("/");
     const WebShopClickEvent = () => history.push("/store");
@@ -13,15 +15,20 @@ function NavBar() {
 
     return (
         <div className="navBar">
-            <AppBar className={'appBar'}>
-                <Toolbar className={'toolBar'}>
-                    <ButtonGroup variant="text" color="inherit" aria-label="text primary button group">
-                        <Button onClick={HomeClickEvent} className={'button'}> Home </Button>
+            <Grid container direction="row" justify="flex-start" alignItems="flex-start">
+                <Grid>
+                    <img onClick={HomeClickEvent} alt={"Logo"} src={logo}/>
+                </Grid>
+                <Grid className={"ButtonGroup"}>
+                    <ButtonGroup variant="text"  aria-label="buttonGroup">
                         <Button onClick={WebShopClickEvent} className={'button'}> Store </Button>
                         <Button onClick={ContactsClickEvent} className={'button'}> Contacts </Button>
+                        <Button onClick={ContactsClickEvent} className={'button'}> Explore </Button>
+                        <Button onClick={ContactsClickEvent} className={'button'}> Menu4 </Button>
+                        <Button onClick={ContactsClickEvent} className={'button'}> Menu5 </Button>
                     </ButtonGroup>
-                </Toolbar>
-            </AppBar>
+                </Grid>
+            </Grid>
         </div>
     );
 }
