@@ -3,7 +3,7 @@
     position: absolute;
     width: inherit;
     height: 350px;
-    background-image: url('../../resources/waveBottom.svg');
+    background-image: url('../../waveBottom.svg');
 }
 
 .BottomGrid {

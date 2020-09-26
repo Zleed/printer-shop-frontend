@@ -1,6 +1,8 @@
 import React from 'react';
-import './Footer.css'
+
 import Grid from "@material-ui/core/Grid";
+
+import '../../resources/style/component/Footer.css'
 
 function Footer() {
 

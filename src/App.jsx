@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './resources/style/App.css';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import HomePage from "./component/page/HomePage";
 import NavBar from "./component/navbar/NavBar";
@@ -15,10 +15,7 @@ function App() {
                     <Header/>
                     <div className="Page">
                         <Route path="/" exact component={HomePage}/>
-                        <ProductCard/>
-                        <ProductCard/>
-                        <ProductCard/>
-                        <ProductCard/>
+                        <Route path="/store" exact component={ProductCard}/>
                     </div>
                     <Footer/>
                 </div>

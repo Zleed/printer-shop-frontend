@@ -1,8 +1,11 @@
-import './NavBar.css'
 import React from 'react';
-import {ButtonGroup, Button} from "@material-ui/core";
 import {useHistory} from "react-router-dom";
+
+import {ButtonGroup, Button} from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
+
+import '../../resources/style/component/NavBar.css'
+import '../../resources/style/animation.css'
 import logo from '../../resources/logo.png';
 
 function NavBar() {
@@ -17,10 +20,10 @@ function NavBar() {
         <div className="navBar">
             <Grid container direction="row" justify="flex-start" alignItems="flex-start">
                 <Grid>
-                    <img onClick={HomeClickEvent} alt={"Logo"} src={logo}/>
+                    <img className={"FadeIn"} onClick={HomeClickEvent} alt={"Logo"} src={logo}/>
                 </Grid>
                 <Grid className={"ButtonGroup"}>
-                    <ButtonGroup variant="text"  aria-label="buttonGroup">
+                    <ButtonGroup className={"FadeIn"} variant="text"  aria-label="buttonGroup">
                         <Button onClick={WebShopClickEvent} className={'button'}> Store </Button>
                         <Button onClick={ContactsClickEvent} className={'button'}> Contacts </Button>
                         <Button onClick={ContactsClickEvent} className={'button'}> Explore </Button>
