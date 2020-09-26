@@ -1,11 +1,10 @@
 import React from 'react';
 import ProductCard from '../product/ProductCard';
-import '../../resources/style/animation.css'
 
 function HomePage() {
 
     return (
-        <div className="HomePage FadeIn">
+        <div className="HomePage">
             HomePage
             <ProductCard/>
             <ProductCard/>

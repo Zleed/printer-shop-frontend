@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 import {Card, CardHeader, CardMedia, CardContent, CardActions, Avatar,
     IconButton, Typography} from '@material-ui/core';
