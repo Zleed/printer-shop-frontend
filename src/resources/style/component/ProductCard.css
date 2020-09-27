@@ -1,6 +1,8 @@
 .card {
     max-width: 345px;
-    margin-bottom: 50px;
+    margin: 0 5px;
+    padding: 5px 0;
+
 }
 .media {
     height: 0;

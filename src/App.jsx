@@ -2,13 +2,14 @@ import React, {useContext} from 'react';
 import './resources/style/App.css';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import './resources/style/animation.css'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import './resources/style/component/carousel.min.css'
 import Header from "./component/templates/Header";
 import {Carousel} from "react-responsive-carousel";
 import HomePage from "./component/page/HomePage";
 import ProductCard from "./component/product/ProductCard";
 import Footer from "./component/templates/Footer";
 import {AppContext} from "./context/AppContext";
+import CardCarousel from "./component/display/CardCarousel";
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         selectedItem: page,
         showStatus: false,
         dynamicHeight: true,
+        showArrows: false,
+        showIndicators: false,
     }
 
     return (
@@ -38,6 +41,9 @@ function App() {
                                 <div>
                                     <ProductCard/>
                                     <ProductCard/>
+                                </div>
+                                <div>
+
                                 </div>
                             </Carousel>
                         </div>

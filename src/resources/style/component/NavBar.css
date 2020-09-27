@@ -1,3 +1,8 @@
+@media (max-width: 800px) {
+    .ButtonGroup {
+        display:none;
+    }
+}
 .navBar {
     background-image: url('../../waveTop.svg');
 }

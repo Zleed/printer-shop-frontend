@@ -1,15 +1,16 @@
 import React from 'react';
-import ProductCard from '../product/ProductCard';
+import CardCarousel from "../display/CardCarousel";
 
 function HomePage() {
 
     return (
         <div className="HomePage">
-            HomePage
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
+            <h1>Featured</h1>
+            <CardCarousel/>
+            <h1>Top Rated</h1>
+            <CardCarousel/>
+            <h1>Most Favoured</h1>
+            <CardCarousel/>
         </div>
     );
 }

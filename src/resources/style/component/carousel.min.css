@@ -52,7 +52,7 @@
 }
 
 .carousel-root {
-    outline: none
+    outline: none;
 }
 
 .carousel {
@@ -86,8 +86,7 @@
 }
 
 .carousel .thumbs-wrapper {
-    visibility: hidden;
-    /*margin: 20px;*/
+    margin: 20px;
     overflow: hidden
 }
 
@@ -176,11 +175,11 @@
 
 .carousel .slider-wrapper.axis-horizontal .slider .slide {
     flex-direction: column;
-    flex-flow: column
+    flex-flow: column;
+    /*margin: 0 0 10px;*/
 }
 
 .carousel .slider-wrapper.axis-vertical {
-
     -ms-box-orient: horizontal;
     display: -webkit-box;
     display: -moz-box;
@@ -212,7 +211,7 @@
 }
 
 .carousel .slide {
-    padding: 3em 5em 0;
+    /*padding: 3em 5em 0;*/
     min-width: 100%;
     margin: 0;
     position: relative;
@@ -259,7 +258,6 @@
 }
 
 .carousel .control-dots {
-    visibility: hidden;
     position: absolute;
     bottom: 0;
     margin: 10px 0;
@@ -298,7 +296,6 @@
 }
 
 .carousel .carousel-status {
-    visibility: hidden;
     position: absolute;
     top: 0;
     right: 0;
@@ -310,4 +307,13 @@
 
 .carousel:hover .slide .legend {
     opacity: 1
+}
+.CardGroup {
+    margin-bottom: 0px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.Card{
+    margin-bottom: 10px;
 }
