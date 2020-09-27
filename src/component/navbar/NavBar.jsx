@@ -11,11 +11,7 @@ import {AppContext} from "../../context/AppContext";
 
 function NavBar() {
 
-    // const history = useHistory();
     const {setPage} = useContext(AppContext);
-    // const HomeClickEvent = () => history.push("/");
-    // const WebShopClickEvent = () => history.push("/store");
-    // const ContactsClickEvent = () => history.push("/contacts");
 
     return (
         <div className="navBar">

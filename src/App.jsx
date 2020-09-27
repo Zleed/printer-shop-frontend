@@ -14,10 +14,12 @@ import {AppContext} from "./context/AppContext";
 function App() {
 
     const {page} = useContext(AppContext);
-    
+
     const settings = {
         showThumbs: false,
         selectedItem: page,
+        showStatus: false,
+        dynamicHeight: true,
     }
 
     return (
