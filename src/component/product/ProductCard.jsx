@@ -1,49 +1,18 @@
 import React from 'react';
 
-import {Card, CardHeader, CardMedia, CardContent, CardActions, Avatar,
-    IconButton, Typography} from '@material-ui/core';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+import {Card, CardHeader, CardActions} from '@material-ui/core';
 
 import '../../resources/style/component/ProductCard.css'
+import DetailsButton from "./DetailsButton";
 
-function ProductCard() {
+function ProductCard(props) {
 
     return (
         <Card className={'card'}>
-            <CardHeader
-                avatar={
-                    <Avatar aria-label="recipe" className={'avatar'}>
-                        R
-                    </Avatar>
-                }
-                action={
-                    <IconButton aria-label="settings">
-                        <MoreVertIcon/>
-                    </IconButton>
-                }
-                title="Shrimp and Chorizo Paella"
-                subheader="September 14, 2016"
-            />
-            <CardMedia
-                className={'media'}
-                image="https://www.freelogodesign.org/file/app/client/thumb/8e691123-cf33-4e1a-8892-3dd256d61cf0_200x200.png?1600851441759"
-                title="Paella dish"
-            />
-            <CardContent>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    This impressive paella is a perfect party dish and a fun meal to cook together with your
-                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
-                </Typography>
-            </CardContent>
-            <CardActions disableSpacing>
-                <IconButton aria-label="add to favorites">
-                    <FavoriteIcon/>
-                </IconButton>
-                <IconButton aria-label="share">
-                    <ShareIcon/>
-                </IconButton>
+            <CardHeader action={<DetailsButton size={props.size}/>} title={props.name}/>
+            <img className={"img"} src={"https://www.bobux.eu/media/wysiwyg/BOBUX_WEB_Sizing_FitYour_Shoe.png"} alt={"img"}/>
+            <CardActions>
+                <h3 className={"center"}>{props.price}</h3>
             </CardActions>
         </Card>
     );

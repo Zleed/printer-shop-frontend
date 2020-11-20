@@ -6,8 +6,6 @@ import '../../resources/style/component/Footer.css'
 
 function Footer() {
 
-    const wave = require('../../resources/waveBottom.svg');
-
     return (
         <div className="Footer">
             <Grid className={"BottomGrid"} container direction="col" justify="space-evenly" alignItems="center">

@@ -1,13 +1,35 @@
 .card {
+    min-width: 345px;
     max-width: 345px;
     margin: 0 5px;
     padding: 5px 0;
-
 }
+
 .media {
-    height: 0;
     padding-top: 30px;
 }
+
 .avatar {
     background-color: red;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.img {
+    max-width: 50%;
+}
+
+.size{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.quantity{
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 30px;
 }

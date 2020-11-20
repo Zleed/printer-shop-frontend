@@ -53,6 +53,8 @@
 
 .carousel-root {
     outline: none;
+    /*display: inline-flex;*/
+    /*max-width: 100%;*/
 }
 
 .carousel {
@@ -309,7 +311,6 @@
     opacity: 1
 }
 .CardGroup {
-    margin-bottom: 0px;
     display: inline-flex;
     justify-content: space-between;
     width: 100%;

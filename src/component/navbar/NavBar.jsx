@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-// import {useHistory} from "react-router-dom";
 
 import {ButtonGroup, Button} from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
@@ -22,10 +21,8 @@ function NavBar() {
                 <Grid className={"ButtonGroup"}>
                     <ButtonGroup className={"FadeIn"} variant="text"  aria-label="buttonGroup">
                         <Button onClick={() => setPage(1)} className={'button'}> Store </Button>
-                        <Button onClick={() => setPage(2)} className={'button'}> Contacts </Button>
-                        <Button onClick={() => setPage(3)} className={'button'}> Explore </Button>
-                        <Button onClick={() => setPage(4)} className={'button'}> Menu4 </Button>
-                        <Button onClick={() => setPage(5)} className={'button'}> Menu5 </Button>
+                        <Button onClick={() => setPage(2)} className={'button'}> All</Button>
+                        <Button onClick={() => setPage(3)} className={'button'}> Contacts </Button>
                     </ButtonGroup>
                 </Grid>
             </Grid>

@@ -1,21 +1,18 @@
 import React, {useContext} from 'react';
 import './resources/style/App.css';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
 import './resources/style/animation.css'
 import './resources/style/component/carousel.min.css'
 import Header from "./component/templates/Header";
 import {Carousel} from "react-responsive-carousel";
-import HomePage from "./component/page/HomePage";
-import ProductCard from "./component/product/ProductCard";
+import SliderPage from "./component/page/SliderPage";
 import Footer from "./component/templates/Footer";
 import {AppContext} from "./context/AppContext";
-import CardCarousel from "./component/display/CardCarousel";
-
+import StorePage from "./component/page/StorePage";
+import HomePage from "./component/page/HomePage";
 
 function App() {
 
     const {page} = useContext(AppContext);
-
     const settings = {
         showThumbs: false,
         selectedItem: page,
@@ -26,31 +23,26 @@ function App() {
     }
 
     return (
-        <BrowserRouter>
-            <Switch>
-                    <div className="App FadeIn">
-                        <Header/>
-                        <div className="Page FadeIn">
-                            <Carousel {...settings}>
-                                <div>
-                                    <HomePage/>
-                                </div>
-                                <div>
-                                    <ProductCard/>
-                                </div>
-                                <div>
-                                    <ProductCard/>
-                                    <ProductCard/>
-                                </div>
-                                <div>
-
-                                </div>
-                            </Carousel>
-                        </div>
-                        <Footer/>
+        <div className="App FadeIn">
+            <Header/>
+            <div className="Page FadeIn">
+                <Carousel {...settings}>
+                    <div>
+                        <HomePage/>
                     </div>
-            </Switch>
-        </BrowserRouter>
+                    <div>
+                        <SliderPage/>
+                    </div>
+                    <div>
+                        <StorePage/>
+                    </div>
+                    <div>
+                        <HomePage/>
+                    </div>
+                </Carousel>
+            </div>
+            <Footer/>
+        </div>
     );
 }
 
